@@ -99,12 +99,12 @@ local sysTable = {
 	PPC = true,
 	Prefix = ":",
 	actionPrefix = "!",
-	kickReason = "You have been kicked from the server.",
-	banReason = "You have been banned from the game.",
-	shutdownReason = "This server is shutting down..\nTry joining a different server!",
-	serverMessage = "Server Message",
-	exploitMessage = "Basic Admin Essentials\nAn error occurred.",
-	serverLockReason = "The server is locked.",
+	kickReason = "Frappuccino Admin\nYou have been disconnected from the server.",
+	banReason = "Frappuccino Admin\nYou have been banned from the game.",
+	shutdownReason = "Frappuccino Admin\nThis server is shutting down..\nTry joining a different server!",
+	serverMessage = "Frappuccino Systems",
+	exploitMessage = "Frappuccino Admin\nAn error occurred.",
+	serverLockReason = "Frappuccino Admin\nThe server is locked."
 	donorPerks = true,
 	creatorDebugging = true,
 	publicCommands = true,
@@ -393,7 +393,7 @@ function Funcs.Kick(Args)
 					end
 				end
 
-				b:Kick('Basic Admin Remade. \n You have been kicked for: '..Reason..' Please make sure to avoid these actions!\nModerator: '..Player.Name..'')
+				b:Kick('Frappuccino Admin \n You have been kicked for: '..Reason..' Please make sure to avoid these actions!\nModerator: '..Player.Name..'')
 			end
 		end
 	end
@@ -425,7 +425,7 @@ function Funcs.Ban(Args)
 				sysTable.Permissions.Banned[tostring(b.UserId)] = b.Name
 				game.ReplicatedStorage.RemoteEvent:FireAllClients('Success','Successfully banned '..b.name,3)
 				--pluginEvent:Fire("Ban Logs",{Player,"Banned "..b.Name})
-				b:Kick('Basic Admin Remade. \n You have been banned for: '..Reason..' . Please make sure to avoid these actions!. Moderator: '..Player.Name..'')
+				b:Kick('Frappuccino Admin\n You have been banned for: '..Reason..' . Please make sure to avoid these actions!. Moderator: '..Player.Name..'')
 
 			end
 		end
