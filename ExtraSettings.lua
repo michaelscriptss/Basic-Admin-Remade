@@ -13,10 +13,10 @@
 
 local Settings = {
 	["Rank Config"] = { --These are the admin ranks you can have a max of 4 at a time.
-		[1] = "Moderator",
-		[2] = "Admin",
-		[3] = "SuperAdmin",
-		[4] = "Game Creator",
+		[1] = "Certified Admin",
+		[2] = "Frappuccino Administrator",
+		[3] = "Chief Admin",
+		[4] = "Developer",
 
 	},
 
@@ -31,7 +31,7 @@ local Settings = {
 	
 	
 	["MusicSystem"] = { -- Supports unlimited just use the same template
-		["Enabled"] = true, -- Is it enabled?
+		["Enabled"] = false, -- Is it enabled?
 		["Title"] = "Music System",
 		["Volume"] = 0.5,
 		["SoundIDs"] = {6901063458; 1840684529},
@@ -45,7 +45,7 @@ local Settings = {
 	},
 
 
-	["TimedNotificationsEnabled"] = true, --Have regular notifications sent out
+	["TimedNotificationsEnabled"] = false, --Have regular notifications sent out
 	["PrivatePMs"] = false, --If false you cant see private messages if true you can
 	["UseLegacyBan"] = false, -- Should we use the old ban system, or the new Roblox Ban API?
 	["CommandBarRestrictionEnabled"] = false, --False to enable command bar. True to disabled command bar (for all ranks) 
@@ -59,7 +59,7 @@ local Settings = {
 
 	["Experimental"] = { -- Experimental features
 		["NoclipFly"] = true, -- Should you be able to noclip when flying?
-		["ModernFont"] = true, -- Should it use the Montserrat font instead of Arial? 
+		["ModernFont"] = false, -- Should it use the Montserrat font instead of Arial? 
 
 	},
 
